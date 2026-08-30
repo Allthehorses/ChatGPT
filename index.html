@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A practical nutrition strategy for a five-day endurance cycling event." />
+    <title>Ride Fuelled — Endurance Cycling Nutrition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar" aria-label="Page navigation">
+      <a class="brand" href="#start" aria-label="Ride Fuelled, back to start"><span class="brand-mark">↗</span><span>RIDE<br />FUELLED</span></a>
+      <p class="eyebrow nav-label">Navigate the plan</p>
+      <nav class="tree-nav" aria-label="Strategy sections">
+        <a class="nav-item active" href="#start"><span>01</span>Start here</a>
+        <a class="nav-item" href="#targets"><span>02</span>Fuel targets</a>
+        <a class="nav-item child" href="#gels">Energy gels</a>
+        <a class="nav-item" href="#ride"><span>03</span>Ride day</a>
+        <a class="nav-item child" href="#recovery">Recovery</a>
+        <a class="nav-item" href="#hydrate"><span>04</span>Hydrate smart</a>
+        <a class="nav-item" href="#gut"><span>05</span>Train your gut</a>
+        <a class="nav-item" href="#checklist"><span>06</span>Race checklist</a>
+      </nav>
+      <div class="sidebar-foot"><span class="pulse"></span>5-day endurance plan</div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <p class="eyebrow">Multi-day endurance cycling</p>
+        <div class="controls" aria-label="Reading controls">
+          <button class="icon-button" id="previous" aria-label="Previous section">↑</button>
+          <button class="icon-button" id="next" aria-label="Next section">↓</button>
+          <button class="focus-button" id="focus" aria-pressed="false"><span>◌</span> Focus</button>
+        </div>
+      </header>
+
+      <section class="panel hero" id="start" data-section="start">
+        <div class="hero-copy">
+          <p class="eyebrow">The headline</p>
+          <h1>Fuel <em>before</em><br />you feel empty.</h1>
+          <p class="lead">Five days. Around 485 miles. Your nutrition is not a side note—it is the pacing strategy that keeps every tomorrow rideable.</p>
+          <div class="ride-meta"><span>5 days</span><i></i><span>≈85 miles / day</span><i></i><span>June · UK</span></div>
+          <a class="primary-link" href="#targets">Build your plan <b>↓</b></a>
+        </div>
+        <div class="hero-visual" aria-label="Five-stage route illustration">
+          <div class="sun"></div><div class="terrain terrain-a"></div><div class="terrain terrain-b"></div>
+          <div class="route"><span class="route-dot dot-one">1</span><span class="route-dot dot-two">2</span><span class="route-dot dot-three">3</span><span class="route-dot dot-four">4</span><span class="route-dot dot-five">5</span></div>
+          <div class="bike-wheel left-wheel"></div><div class="bike-wheel right-wheel"></div><div class="bike-frame"></div>
+          <p class="visual-caption">CONSISTENCY<br />OUTLASTS HEROICS</p>
+        </div>
+      </section>
+
+      <section class="panel" id="targets" data-section="targets">
+        <div class="section-heading"><p class="eyebrow">01 · The engine</p><h2>Carbs are the<br /><em>daily currency.</em></h2></div>
+        <div class="metric-grid">
+          <article class="metric-card lime"><span class="metric-label">Across each day</span><strong>8–12</strong><span class="metric-unit">g carbohydrate / kg body mass</span><p>High-volume, consecutive endurance work calls for the top end of normal endurance fueling.</p></article>
+          <article class="metric-card dark"><span class="metric-label">While riding</span><strong>60–90</strong><span class="metric-unit">g carbohydrate / hour</span><p>Start early and feed regularly. Waiting for fatigue is already too late.</p></article>
+          <article class="metric-card peach"><span class="metric-label">Why it matters</span><strong>5×</strong><span class="metric-unit">opportunities to recover</span><p>Miss today’s fuel and it becomes harder to restore glycogen before tomorrow’s ride.</p></article>
+        </div>
+        <p class="section-note">Personalise with body mass, pace, temperature and tolerance. Practice the plan well before the event.</p>
+      </section>
+
+      <section class="panel split-panel" id="gels" data-section="gels">
+        <div class="section-heading"><p class="eyebrow">02 · The toolkit</p><h2>Gels are<br /><em>the accelerator.</em></h2><p class="lead compact">Useful, portable and fast—but not the whole menu.</p></div>
+        <div class="gel-stack">
+          <article class="gel-card gel-1"><span>1</span><div><h3>Start around 60–90 min</h3><p>Have your first gel before the effort catches up with you.</p></div></article>
+          <article class="gel-card gel-2"><span>2</span><div><h3>Then every 45–60 min</h3><p>Adjust this around food and sports drink to hit your hourly carb target.</p></div></article>
+          <article class="gel-card gel-3"><span>3</span><div><h3>Pair with water</h3><p>Concentrated carbohydrate without enough fluid can upset the stomach.</p></div></article>
+        </div>
+        <div class="bottom-callout"><b>HERO MOVE</b> Use gels for a quick lift, climbs, late-race fatigue or when solid food stops sounding good. Combine with real food to avoid palate fatigue.</div>
+      </section>
+
+      <section class="panel" id="ride" data-section="ride">
+        <div class="section-heading"><p class="eyebrow">03 · A repeatable rhythm</p><h2>Eat little.<br /><em>Often.</em></h2></div>
+        <div class="timeline" role="list">
+          <article role="listitem"><time>−4 to −1 h</time><div><h3>Set the base</h3><p>Choose familiar, carbohydrate-led food: porridge, toast, banana, pancakes. Keep the closer-to-start meal simple and low in fibre/fat.</p></div></article>
+          <article role="listitem"><time>0–90 min</time><div><h3>Ride ahead of hunger</h3><p>Start fluids early. Begin regular small feeds even while energy feels good.</p></div></article>
+          <article role="listitem"><time>Every hour</time><div><h3>Land 60–90 g carbs</h3><p>Mix gels, drink mix and easy whole foods. Keep everything accessible from the saddle.</p></div></article>
+          <article role="listitem"><time>Finish →</time><div><h3>Begin tomorrow now</h3><p>Rehydrate, eat carbohydrate and add protein soon after the ride—then continue to replenish across the evening.</p></div></article>
+        </div>
+      </section>
+
+      <section class="panel hydrate" id="hydrate" data-section="hydrate">
+        <div class="section-heading"><p class="eyebrow">04 · Heat changes the equation</p><h2>Replace what<br /><em>sweat takes.</em></h2></div>
+        <div class="hydration-content">
+          <div class="drop-graphic"><div class="drop-fill"></div><span>H₂O</span></div>
+          <div class="hydration-copy"><p class="big-number">300–600 <small>mg sodium / serving</small></p><p>Electrolytes are especially relevant in warm conditions, longer rides and for heavy sweaters. A practical starting point is a product with sodium, then test it in training.</p><ul><li>Use drink, tablets or powder—whatever you tolerate.</li><li>Keep water and electrolyte/carbohydrate drinks in the mix.</li><li>Adjust for heat, sweat rate and how you feel.</li></ul></div>
+        </div>
+      </section>
+
+      <section class="panel split-panel gut" id="gut" data-section="gut">
+        <div class="section-heading"><p class="eyebrow">05 · The quiet advantage</p><h2>Train the<br /><em>gut, too.</em></h2><p class="lead compact">Your stomach can learn the workload.</p></div>
+        <div class="progression">
+          <p class="progress-label">Build carb tolerance over 6–10 weeks</p>
+          <div class="rungs"><div><span>Week 1</span><b>Comfortable baseline</b></div><div><span>Weekly</span><b>+10 g/hour, if tolerated</b></div><div><span>Race prep</span><b>Rehearse the exact plan</b></div></div>
+          <p>Back off if you feel bloated, sick or cramped. Lower fibre, fat and protein shortly before and during intense riding if digestion is an issue.</p>
+        </div>
+      </section>
+
+      <section class="panel checklist-panel" id="checklist" data-section="checklist">
+        <div class="section-heading"><p class="eyebrow">06 · Pack the plan</p><h2>Nothing new<br /><em>on day one.</em></h2></div>
+        <div class="checklist" aria-label="Race nutrition checklist">
+          <label><input type="checkbox" /><span>My hourly carb target is calculated and tested.</span></label>
+          <label><input type="checkbox" /><span>Fuel is portioned, varied and easy to reach.</span></label>
+          <label><input type="checkbox" /><span>My drink and sodium plan suits the forecast.</span></label>
+          <label><input type="checkbox" /><span>I know food and water stops on each route.</span></label>
+          <label><input type="checkbox" /><span>Recovery food is ready at every finish.</span></label>
+        </div>
+        <div class="finish-line"><p class="eyebrow">Your only job</p><h2>Keep the pedals turning.<br /><em>Keep the fuel coming.</em></h2><a class="primary-link" href="#start">Back to top <b>↑</b></a></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
