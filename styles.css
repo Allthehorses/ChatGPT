@@ -52,3 +52,17 @@ body { background:radial-gradient(circle at 75% 4%,#fff 0,transparent 26%),radia
 .drop-graphic { border-color:#efffa8; background:rgba(211,255,80,.04); box-shadow:0 0 45px rgba(210,255,78,.14),inset 0 1px 1px rgba(255,255,255,.2); }.drop-fill { background:linear-gradient(135deg,#efffa8,#bcf52e); }
 .gut { background:radial-gradient(circle at 77% 21%,rgba(255,255,255,.85),transparent 26%),linear-gradient(135deg,#f8c9b6,#ecc0b0); }.rungs div { border:1px solid rgba(255,255,255,.6); border-left:3px solid var(--orange); border-radius:9px; background:rgba(255,255,255,.5); box-shadow:0 10px 22px rgba(98,55,39,.08),inset 0 1px rgba(255,255,255,.8); }
 .checklist-panel { background:radial-gradient(circle at 80% 11%,#f8ffd4 0,transparent 24%),linear-gradient(135deg,#efffa8,#cafa3f); }.checklist label { border-radius:12px; background:rgba(255,255,255,.37); box-shadow:0 12px 23px rgba(56,84,9,.1),inset 0 1px 0 rgba(255,255,255,.85); transition:transform .2s,background .2s; }.checklist label:hover { transform:translateY(-2px); background:rgba(255,255,255,.52); }
+
+/* Five-day mountain journey */
+.journey-visual svg { position:absolute; inset:0; z-index:1; width:100%; height:100%; }
+.journey-visual .trail-shadow { fill:none; stroke:rgba(25,59,42,.38); stroke-width:17; stroke-linecap:round; transform:translateY(4px); }
+.journey-visual .trail { fill:none; stroke:url(#trail); stroke-width:9; stroke-linecap:round; filter:drop-shadow(0 3px 2px rgba(23,45,31,.26)); }
+.journey-visual .stage circle { fill:var(--orange); stroke:rgba(255,255,255,.88); stroke-width:3; filter:drop-shadow(0 4px 5px rgba(24,41,30,.27)); }
+.journey-visual .stage > text:not(.stage-label) { fill:white; font:700 13px "DM Mono",monospace; text-anchor:middle; }
+.journey-visual .stage-label { fill:#f6f7d7; font:700 9px "DM Mono",monospace; letter-spacing:1px; }
+.journey-visual .rider { fill:none; stroke:#10271c; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; filter:drop-shadow(0 3px 2px rgba(0,0,0,.18)); }
+.journey-visual .rider circle { fill:#10271c; stroke:none; }
+.journey-title { fill:#f6ffd8; font:700 11px "DM Mono",monospace; letter-spacing:1.4px; }.journey-subtitle { fill:rgba(246,255,216,.78); font:500 8px "DM Mono",monospace; letter-spacing:1.1px; }
+.journey-visual .visual-caption { z-index:9; color:#f6ffd8; }
+.journey-visual .visual-caption { max-width:240px; bottom:7%; color:#f6ffd8; font-size:13px; line-height:1.08; letter-spacing:.1em; text-shadow:0 3px 12px rgba(0,0,0,.34); }
+.journey-visual .visual-caption strong { display:block; margin-top:5px; color:white; font:800 clamp(20px,2.3vw,31px)/.92 Manrope,Arial,sans-serif; letter-spacing:-.07em; }
